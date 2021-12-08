@@ -1,13 +1,104 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  outline: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #d9d8ff;
+  display: flex;
+  justify-content: center;
+}
+
+.App{
+  background-color: #f5f5f5;
+  min-height: 300px;
+  min-width: 500px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: rgba(21, 21, 21, 0.3) 0 2px 6px;
+}
+
+.Header{
+  background-color: #4696e5;
+  color: #fafafa;
+  padding: 8px;
+  border-radius: 8px 8px 0 0 ;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+}
+.Header h1{
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+/* Form Style */
+
+.Form_container{
+  padding: 6px;
+  width: 100%;
+  
+}
+
+.Form_container input{
+  padding: 8px;
+  width: calc(60% - 16px);
+  border-radius: 4px;
+  border:1px solid #4696e5;
+  font-family: 'Lato', sans-serif;
+}
+
+.Form_container button{
+  font-family: 'Lato', sans-serif;
+  padding: 8px;
+  margin-left: 8px;
+  width: calc(20% - 16px);
+  color: #fafafa;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.add_btn{
+  background-color: #4696e5;
+}
+
+.clear_btn{
+  
+  background-color: #dc3545;
+}
+
+.Form_container button:hover{
+  background-color: #58a2ec;
+}
+/* List Style */
+
+.list_container{
+  padding: 8px;
+  width: calc(100% - 16px);
+  font-family: 'Lato', sans-serif;
+}
+
+li{
+  background-color: #fafafa;
+  border: 1px solid #21212121;
+  border-radius: 4px;
+  padding-left: 6px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.close_btn{
+  padding: 0px;
+  background-color: #f5f5f5;
+  color: #dc3545;
+  font-size: 25px;
+}
+
+.close_btn:hover{
+  color: #e94f5f;
 }
